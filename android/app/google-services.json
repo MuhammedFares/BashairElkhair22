@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "454455651376",
+    "firebase_url": "https://bshair-elkher-default-rtdb.firebaseio.com",
+    "project_id": "bshair-elkher",
+    "storage_bucket": "bshair-elkher.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454455651376:android:e44ab71192d9a9847d91f5",
+        "android_client_info": {
+          "package_name": "com.Moka.bshair_elkher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454455651376-gdfsjfuuka3lbfks68ed80223p8o3784.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Moka.bshair_elkher",
+            "certificate_hash": "97b4fda8f91b240164382125da19c3efedae3b03"
+          }
+        },
+        {
+          "client_id": "454455651376-kak6qosff48nht1k0kigciuevm7foq8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCvuj3YvalKs_T_rIrZoblToLlTwT3T_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454455651376-5tu80hmu8o74jvseo5m8vld5pejnhmrq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "454455651376-d2h4rfcjgcr361d7f9blgjronkcspgas.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.bshairElkher"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454455651376:android:1d6c74fac8e796807d91f5",
+        "android_client_info": {
+          "package_name": "com.example.bshair_elkher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454455651376-o9rb565mbeuegamem70be8rl7pbhhsbm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bshair_elkher",
+            "certificate_hash": "3a3b85712b3eca55510a09fe4810418cb0676cfb"
+          }
+        },
+        {
+          "client_id": "454455651376-rvl0fmtksi3ikjpuv46450c25j7j374r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bshair_elkher",
+            "certificate_hash": "2178c9a9d9c4b2ce9252c90b53fef297f5951160"
+          }
+        },
+        {
+          "client_id": "454455651376-v0mjh9cjrfiqvdkgc8jfp1q77cm9765a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bshair_elkher",
+            "certificate_hash": "97b4fda8f91b240164382125da19c3efedae3b03"
+          }
+        },
+        {
+          "client_id": "454455651376-kak6qosff48nht1k0kigciuevm7foq8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCvuj3YvalKs_T_rIrZoblToLlTwT3T_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454455651376-5tu80hmu8o74jvseo5m8vld5pejnhmrq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "454455651376-d2h4rfcjgcr361d7f9blgjronkcspgas.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.bshairElkher"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>454455651376-ljcf40h6a85ggae6dpe7rfh54th7sjq0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.454455651376-ljcf40h6a85ggae6dpe7rfh54th7sjq0</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>454455651376-31j48edvt4htsshjhvar09km3i54m7bo.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCTdHLpsSTTfPA1W-aQ9kikfVqejnMJdcw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>454455651376</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.moka.bshairelkheir</string>
+	<key>PROJECT_ID</key>
+	<string>bshair-elkher</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bshair-elkher.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:454455651376:ios:f085412dd5661bad7d91f5</string>
+	<key>DATABASE_URL</key>
+	<string>https://bshair-elkher-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

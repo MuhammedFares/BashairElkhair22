@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cube.paysky.io:6006/js/LightBox.js"></script>
+
+<head>
+  <title>Bright Calculating Cheetah</title>
+  <meta property="og:title" content="Bright Calculating Cheetah" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+  <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+  <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+          data-tag="font"
+  />
+  <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+          data-tag="font"
+  />
+  <style>
+	:root {
+  --dl-color-gray-500: #595959;
+  --dl-color-gray-700: #999999;
+  --dl-color-gray-900: #D9D9D9;
+  --dl-size-size-large: 144px;
+  --dl-size-size-small: 48px;
+  --dl-color-danger-300: #A22020;
+  --dl-color-danger-500: #BF2626;
+  --dl-color-danger-700: #E14747;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-size-size-medium: 96px;
+  --dl-size-size-xlarge: 192px;
+  --dl-size-size-xsmall: 16px;
+  --dl-space-space-unit: 16px;
+  --dl-color-primary-100: #003EB3;
+  --dl-color-primary-300: #0074F0;
+  --dl-color-primary-500: #14A9FF;
+  --dl-color-primary-700: #85DCFF;
+  --dl-color-success-300: #199033;
+  --dl-color-success-500: #32A94C;
+  --dl-color-success-700: #4CC366;
+  --dl-size-size-xxlarge: 288px;
+  --dl-size-size-maxwidth: 1400px;
+  --dl-radius-radius-round: 50%;
+  --dl-space-space-halfunit: 8px;
+  --dl-space-space-sixunits: 96px;
+  --dl-space-space-twounits: 32px;
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius8: 8px;
+  --dl-space-space-fiveunits: 80px;
+  --dl-space-space-fourunits: 64px;
+  --dl-space-space-threeunits: 48px;
+  --dl-space-space-oneandhalfunits: 24px;
+}
+.button {
+  color: var(--dl-color-gray-black);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.input {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.textarea {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.list {
+  width: 100%;
+  margin: 1em 0px 1em 0px;
+  display: block;
+  padding: 0px 0px 0px 1.5rem;
+  list-style-type: none;
+  list-style-position: outside;
+}
+.list-item {
+  display: list-item;
+}
+.teleport-show {
+  display: flex !important;
+  transform: none !important;
+}
+.Content {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.Heading {
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+
+   </style>
+</head>
+<body>
+<div>
+  <style>
+.home-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.home-container01 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.home-container02 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.home-container03 {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-container04 {
+  flex: 0 0 auto;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-image {
+  width: 100px;
+  object-fit: cover;
+}
+.home-container05 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.home-container06 {
+  flex: 0 0 auto;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-container07 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.home-container08 {
+  flex: 0 0 auto;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-container09 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.home-container10 {
+  flex: 0 0 auto;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-container11 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.home-container12 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.home-container13 {
+  flex: 0 0 auto;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-container14 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.home-container15 {
+  flex: 0 0 auto;
+  width: 200px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.home-container16 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.home-container17 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.home-container18 {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+@media(max-width: 479px) {
+  .home-container {
+    background-size: cover;
+    background-image: url("https://i.postimg.cc/d1vyNwkx/background-1500w.webp");
+  }
+  .home-container01 {
+    height: 34px;
+  }
+  .home-container02 {
+    background-image: linear-gradient(90deg, rgb(252, 0, 255) 0.00%,rgb(0, 219, 222) 100.00%);
+  }
+  .home-container03 {
+    width: 344px;
+    padding-left: 62px;
+  }
+  .home-text {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: Noto Kufi Arabic;
+  }
+  .home-container04 {
+    width: 101px;
+  }
+  .home-image {
+    border-radius: var(--dl-radius-radius-round);
+  }
+  .home-container05 {
+    height: 60px;
+    justify-content: center;
+  }
+  .home-container06 {
+    width: 344px;
+    padding-left: 0px;
+  }
+  .home-text01 {
+    color: #f5f5f5;
+    font-size: 35px;
+    font-family: Noto Kufi Arabic;
+  }
+  .home-container07 {
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-container08 {
+    width: 344px;
+    padding-left: 0px;
+  }
+  .home-text02 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    font-family: Noto Kufi Arabic;
+  }
+  .home-container09 {
+    height: 24px;
+    justify-content: center;
+  }
+  .home-container10 {
+    width: 344px;
+    padding-left: 0px;
+  }
+  .home-text03 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: Noto Kufi Arabic;
+  }
+  .home-container11 {
+    height: 30px;
+  }
+  .home-container12 {
+    width: 402px;
+    height: 89px;
+    justify-content: center;
+  }
+  .home-container13 {
+    width: 304px;
+    padding-left: 0px;
+  }
+  .home-text04 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    font-family: Noto Kufi Arabic;
+  }
+  .home-container14 {
+    width: 362px;
+    height: 186px;
+  }
+  .home-container15 {
+    width: 379px;
+    height: 186px;
+    position: relative;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-text08 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    align-self: center;
+    text-align: center;
+    font-family: Noto Kufi Arabic;
+  }
+  .home-container16 {
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-text11 {
+    color: #ffffff;
+    font-size: 18px;
+    align-self: center;
+    text-align: center;
+    font-family: Noto Kufi Arabic;
+  }
+  .home-container17 {
+    height: 23px;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-text12 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    align-self: center;
+    text-align: center;
+    font-family: Noto Kufi Arabic;
+  }
+  .home-container18 {
+    height: 23px;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-text13 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    align-self: center;
+    text-align: center;
+    font-family: Noto Kufi Arabic;
+  }
+  .home-button {
+    color: rgb(255, 255, 255);
+    width: 240px;
+    height: 74px;
+    font-size: 19px;
+    text-align: center;
+    font-family: Noto Kufi Arabic;
+    line-height: 2.5;
+    border-color: #ffffff;
+    background-color: rgb(20, 134, 34);
+  }
+}
+
+
+        </style>
+
+  <div class="home-container">
+    <div class="home-container01"></div>
+    <div class="home-container02">
+      <div class="home-container03">
+        <span class="home-text">بشائر الخير</span>
+      </div>
+      <div class="home-container04">
+        <img
+                alt="image"
+                src="https://i.postimg.cc/1z2fbFCX/161e4b99-b572-48c4-90b2-859bc4f4598d.jpg"
+                class="home-image"
+        />
+      </div>
+    </div>
+    <div class="home-container05">
+      <div class="home-container06">
+        <span class="home-text01">رساله مالك التطبيق</span>
+      </div>
+    </div>
+    <div class="home-container07">
+      <div class="home-container08">
+        <span class="home-text02">هذا التطبيق هو ملك لشركاء&nbsp;</span>
+      </div>
+    </div>
+    <div class="home-container09">
+      <div class="home-container10">
+        <span class="home-text03">سعودي - مصري - إماراتي&nbsp;</span>
+      </div>
+    </div>
+    <div class="home-container11"></div>
+    <div class="home-container12">
+      <div class="home-container13">
+            <span class="home-text04">
+              <span>&nbsp;ويتم استقبال سعر الخدمة</span>
+              <br />
+              <span>باحدي عملات هذه الدول الثلاثة فيما يعادل&nbsp;</span>
+            </span>
+      </div>
+    </div>
+    <div class="home-container14">
+      <div class="home-container15">
+            <span class="home-text08">
+              <span>رؤية عاديه = 15 ريال سعودي</span>
+              <br />
+            </span>
+        <div class="home-container16"></div>
+        <span class="home-text11">رؤية فضيه = 20 ريال سعودي</span>
+        <div class="home-container17"></div>
+        <span class="home-text12">رؤية ذهبية = 30 ريال سعودي</span>
+        <div class="home-container18"></div>
+        <span class="home-text13">رؤية فورية = 40 ريال سعودي</span>
+      </div>
+    </div>
+    <button class="button home-button" onclick="callLightBox(165,151098)">اذهب الي الدفع&nbsp;</button>
+  </div>
+</div>
+<script type="text/javascript">
+	// amount : amount requested in pounds
+	// ref : Merchant refrence ( example: userid ) it'll be returned with transaction info as MerchantReference
+    function callLightBox(amount,ref){
+        var merchantld = '10298624703';		// Replace with merchantld
+        var terminalld = '22052168';		// Replace with terminalld
+        Lightbox.Checkout.configure= {
+            Orderld: '5050',
+            MID: merchantld,
+            TID: terminalld,
+            AmountTrxn: amount*100,		// *100 to convert cents to pound
+			MerchantReference: ref,		// Merchant refrence ( example: userid ) it'll be returned with transaction info as MerchantReference
+
+            completeCallback: function (data) {
+                SnackBar.postMessage("Done");
+            },
+            errorCallback: function () {
+                SnackBar.postMessage("Error");
+            },
+            cancelCallback: function () {            
+               SnackBar.postMessage("Cancelled");
+            }
+        };
+        Lightbox.Checkout.showLightbox();
+    };
+
+</script>
+</body>
+</html>

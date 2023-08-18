@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bashir</string>
+    <string name="facebook_app_id">1629599394137088</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">562f92320ad05fd0b6db7b6a9f033fcd</string>
+</resources>
