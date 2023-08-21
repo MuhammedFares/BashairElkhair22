@@ -37,7 +37,9 @@ class _ReadOnlyChatState extends State<NewChat> {
 
     return SafeArea(
         child: Scaffold(
-          body:  Column(
+         //   resizeToAvoidBottomPadding: false,
+
+            body:  Column(
             children: [
           Expanded(
               child:

@@ -19,12 +19,12 @@ class InputWidget extends StatelessWidget {
 
   InputWidget(this.mofa, this.chatid, this.player, this.ls, this.notifyParent);
 
-  final TextEditingController textEditingController = TextEditingController();
+  //final TextEditingController textEditingController = TextEditingController();
+  TextEditingController msg = TextEditingController();
 
 
   @override
   Widget build(BuildContext context) {
-
     return Container(
       width: double.infinity,
       height: 50.0,
@@ -62,7 +62,7 @@ class InputWidget extends StatelessWidget {
                     fontSize: 15.0.sp,
                     fontWeight: FontWeight.w600
                 ),
-                controller: textEditingController,
+                controller: msg,
                 decoration: InputDecoration.collapsed(
                   hintText: 'اكتب رسالتك',
                   hintStyle: TextStyle(color: Palette.greyColor),
@@ -79,12 +79,12 @@ class InputWidget extends StatelessWidget {
                 icon:  const Icon(Icons.send),
                 onPressed:() async {
                   if (!mofa) {
-                    if (textEditingController.value.text.isNotEmpty) {
+                    if (msg.value.text.isNotEmpty) {
                       chatmessage s = chatmessage(
-                          textEditingController.text.trim(), "client",
-                        chatdb().formattedDate(),);
-                      String x = textEditingController.text;
-                      textEditingController.clear();
+                        msg.text.trim(), "client",
+                        await chatdb().formattedDate(),);
+                      String x = msg.text;
+                      msg.clear();
 
                      notifyParent(s);
 
@@ -96,12 +96,12 @@ class InputWidget extends StatelessWidget {
                     }
                   }
                   else if   (mofa) {
-                    if (textEditingController.value.text.isNotEmpty) {
+                    if (msg.value.text.isNotEmpty) {
                       chatmessage s = chatmessage(
-                        textEditingController.text.trim(), "notclient",
-                        chatdb().formattedDate(),);
-                      String x = textEditingController.text;
-                      textEditingController.clear();
+                        msg.text.trim(), "notclient",
+                        await chatdb().formattedDate(),);
+                      String x = msg.text;
+                      msg.clear();
                       notifyParent(s);
 
 

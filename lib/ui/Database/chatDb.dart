@@ -1,7 +1,9 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:intl/intl.dart';
+import 'dart:convert' as convert;
 
+import 'package:http/http.dart' as http;
 import 'chatmessage.dart';
 
 class chatdb{
@@ -45,7 +47,7 @@ class chatdb{
     final data = <String, dynamic>{
 
       "body": m.body,
-      "date": formattedDate(),
+      "date": await formattedDate(),
       "Sender":m.sender,
     };
     await db.doc("users/$chatid").collection("messages").add(data);
@@ -82,15 +84,27 @@ class chatdb{
     };
     await db.doc("users/$m").collection("messages").add(data);
   }
-  String formattedDate(){
+  Future<String> formattedDate() async {
 
-    DateTime _now = DateTime.now().toUtc();
-    final format = DateFormat('yyyy-M-d H:m:ss').format(_now);
-
-    print(format);
-    return format.toString();
+    return await GlobalFormatedtime();
   }
 
+  Future<String> GlobalFormatedtime()   async {
+
+    var url =
+    Uri.https('worldtimeapi.org', 'api/timezone/Africa/Cairo');
+    var response =  await http.get(url);
+    if (response.statusCode == 200) {
+      var jsonResponse =
+      convert.jsonDecode(response.body) as Map<String, dynamic>;
+      String tt = jsonResponse['datetime'];
+      var formatedTime = tt.replaceFirst("T", " ").substring(0, tt.indexOf('.')).replaceFirst(".", "");
+      print('Time: $formatedTime');
+      return formatedTime; } else {   DateTime now = DateTime.now();
+    String formattedDate = DateFormat('yyyy-MM-dd HH:mm:ss').format(now);
+    return formattedDate;
+    }
+  }
 
 }
 

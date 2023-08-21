@@ -142,7 +142,7 @@ class ChatWidgets
                     if (textEditingController.value.text.isNotEmpty) {
                       chatmessage s = chatmessage(
                         textEditingController.text.trim(), "client",
-                        chatdb().formattedDate(),);
+                        await chatdb().formattedDate(),);
                       String x = textEditingController.text;
                       textEditingController.clear();
 
@@ -158,7 +158,7 @@ class ChatWidgets
                     if (textEditingController.value.text.isNotEmpty) {
                       chatmessage s = chatmessage(
                         textEditingController.text.trim(), "notclient",
-                        chatdb().formattedDate(),);
+                        await chatdb().formattedDate(),);
                       String x = textEditingController.text;
                       textEditingController.clear();
 
